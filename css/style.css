@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(177, 172, 172);
+  padding: 0%;
+  margin: 0%;
+  font-family: "urbanist", sans-serif;
+  background-image: url(../img/bg.jpg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+@media (max-width: 1200px) {
+  body {
+    height: 600px;
+  }
+}
+
+.container-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-header .navb-logo img {
+  width: 150px;
+  margin-right: auto;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease 0s;
+}
+.container-header .navb-logo img:hover {
+  transform: scale(1.1);
+}
+.container-header .navb-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  letter-spacing: 1px;
+}
+.container-header .navb-items .item {
+  text-align: center;
+  margin-inline: 10px;
+  letter-spacing: 3px;
+  color: rgb(253, 243, 243);
+  padding: 5px 0;
+  transition: all 0.1s ease;
+  border-bottom: 0px solid #000000;
+  border-top: 0px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+.container-header .navb-items .item:hover {
+  border-bottom: 3px solid rgb(214, 235, 255);
+  border-top: 3px solid rgb(87, 168, 243);
+}
+.container-header .navb-items .item a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
