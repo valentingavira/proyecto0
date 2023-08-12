@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    .encabezado__logo{
+        width: 150px;
+        height: 150px;
+    }
+    .encabezado__nav{
+        display: flex;
+        align-items: start;
+        margin-right: 30px;
+        .nav__buscador{
+            .buscador-btn{
+                padding: 1px;
+                margin: 10px;
+                cursor: pointer;
+            }
+        }
+        .nav__lista{
+            display: flex;
+            list-style: none;
+            color: gray;
+            
+            .lista-item{
+                margin: 10px;
+                &:hover{
+                    color: black;
+                }
+                cursor: pointer;
+
+                .sublista{
+                    position: absolute;
+                    display: none;
+                    list-style: none;
+                    .subitem{
+                        padding: 5px;
+                        font-size: 16px;
+                        transition: translate 0.2s;
+                        &:hover{
+                            transform: translateX(5px);
+                            color: black;
+                        }
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: gray;
+                    &:hover{
+                        color: black;
+                    }
+                }
+                &:hover .sublista{
+                    display: block;
+                    
+                }
+            }  
+        }
+    }
+}

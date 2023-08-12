@@ -1,3 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+}
+.encabezado .encabezado__logo {
+  width: 150px;
+  height: 150px;
+}
+.encabezado .encabezado__nav {
+  display: flex;
+  align-items: start;
+  margin-right: 30px;
+}
+.encabezado .encabezado__nav .nav__buscador .buscador-btn {
+  padding: 1px;
+  margin: 10px;
+  cursor: pointer;
+}
+.encabezado .encabezado__nav .nav__lista {
+  display: flex;
+  list-style: none;
+  color: gray;
+}
+.encabezado .encabezado__nav .nav__lista .lista-item {
+  margin: 10px;
+  cursor: pointer;
+}
+.encabezado .encabezado__nav .nav__lista .lista-item:hover {
+  color: black;
+}
+.encabezado .encabezado__nav .nav__lista .lista-item .sublista {
+  position: absolute;
+  display: none;
+  list-style: none;
+}
+.encabezado .encabezado__nav .nav__lista .lista-item .sublista .subitem {
+  padding: 5px;
+  font-size: 16px;
+  transition: translate 0.2s;
+}
+.encabezado .encabezado__nav .nav__lista .lista-item .sublista .subitem:hover {
+  transform: translateX(5px);
+  color: black;
+}
+.encabezado .encabezado__nav .nav__lista .lista-item a {
+  text-decoration: none;
+  color: gray;
+}
+.encabezado .encabezado__nav .nav__lista .lista-item a:hover {
+  color: black;
+}
+.encabezado .encabezado__nav .nav__lista .lista-item:hover .sublista {
+  display: block;
+}
 
 /*# sourceMappingURL=style.css.map */
