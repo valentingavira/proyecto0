@@ -63,3 +63,28 @@
         }
     }
 }
+.lista1{
+    display: flex;
+    .lista-elemento{
+        list-style: none;
+        margin: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .lista2{
+            display: none;
+            list-style: none;
+            .lista2-elemento{
+                &:hover{
+                    background-color: aquamarine;
+                }
+            }
+        }
+        &:hover .lista2{
+            display: block;
+        }
+
+    }
+
+}

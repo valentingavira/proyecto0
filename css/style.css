@@ -60,4 +60,26 @@
   display: block;
 }
 
+.lista1 {
+  display: flex;
+}
+.lista1 .lista-elemento {
+  list-style: none;
+  margin: 10px;
+}
+.lista1 .lista-elemento a {
+  text-decoration: none;
+  color: black;
+}
+.lista1 .lista-elemento .lista2 {
+  display: none;
+  list-style: none;
+}
+.lista1 .lista-elemento .lista2 .lista2-elemento:hover {
+  background-color: aquamarine;
+}
+.lista1 .lista-elemento:hover .lista2 {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
