@@ -5,6 +5,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+/*Header*/
 .encabezado {
   display: flex;
   justify-content: space-between;
@@ -27,6 +28,9 @@
   align-items: start;
   margin-right: 30px;
   z-index: 100;
+}
+.encabezado .encabezado__nav .menu {
+  display: none;
 }
 .encabezado .encabezado__nav .nav__buscador .buscador-btn {
   padding: 1px;
@@ -70,6 +74,21 @@
   display: block;
 }
 
+@media (max-width: 1000px) {
+  .encabezado .encabezado__nav .nav__buscador {
+    display: none;
+  }
+  .encabezado .encabezado__nav .nav__lista {
+    display: none;
+  }
+  .encabezado .encabezado__nav .menu {
+    display: block;
+    font-size: 25px;
+  }
+  .encabezado .encabezado__nav .menu #check:checked + .nav__lista {
+    display: flex;
+  }
+}
 /*btobtop*/
 main .publicacion {
   display: flex;
