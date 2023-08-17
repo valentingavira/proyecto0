@@ -24,7 +24,7 @@
   display: grid;
   padding: 0px 80px 20px 80px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: minmax(300px, 1fr);
+  grid-auto-rows: minmax(300px, 400px);
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -34,6 +34,11 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
+  transition: filter 0.3s, transform 0.3s;
+}
+.card-container .card:hover {
+  transform: scale(1.05);
 }
 .card-container .card img {
   width: 100%;
@@ -59,7 +64,7 @@
 }
 .card-container .overlay p {
   color: white;
-  font-size: 18px;
+  font-size: 30px;
 }
 .card-container .overlay:hover {
   opacity: 1;
@@ -67,7 +72,9 @@
 
 @media (max-width: 700px) {
   .card-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, 300px);
+    padding: 0px;
   }
 }
 /*footer*/
@@ -126,9 +133,35 @@
   text-align: center;
   transition: all 300ms ease;
   border-radius: 50px;
+  transition: filter 0.3s, transform 0.3s;
 }
 .footer .box-padre .box-hijo .red-social a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transform: scale(1.35);
+}
+.footer .box-padre .box-hijo .mail .controls {
+  width: 80%;
+  background-color: #000000;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  border: 1px solid rgb(58, 160, 255);
+  font-size: 15px;
+}
+.footer .box-padre .box-hijo .mail .botom {
+  width: 30%;
+  background: #32a3ff;
+  border: none;
+  padding: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: filter 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.footer .box-padre .box-hijo .mail .botom:hover {
+  transform: scale(1.1);
 }
 .footer .grupo-2 {
   background-color: #ffffff;
