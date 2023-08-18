@@ -1,3 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Poopins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(/image/fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgb(206, 206, 206);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px black;
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+body .wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+body .wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+body .wrapper .input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+body .wrapper .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(216, 216, 216);
+  border-radius: 40px;
+  font-size: 16px;
+  color: azure;
+  padding: 20px 45px 20px 20px;
+}
+body .wrapper .input-box input:hover {
+  color: white;
+}
+body .wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: -15px 0 15px;
+}
+body .wrapper .remember-forgot label, body .wrapper .remember-forgot input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+body .wrapper .remember-forgot a {
+  color: white;
+  text-decoration: none;
+}
+body .wrapper .remember-forgot a:hover {
+  text-decoration: underline;
+}
+body .wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px black;
+  cursor: pointer;
+  font-size: 16px;
+  color: gray;
+  font-weight: 600;
+  transition: filter 0.3s, transform 0.3s;
+}
+body .wrapper .btn:hover {
+  color: rgb(255, 123, 244);
+  transform: scale(1.1);
+}
+body .wrapper .register-limk {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+body .wrapper .register-limk p, body .wrapper .register-limk a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+body .wrapper .register-limk p:hover, body .wrapper .register-limk a:hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=Prueba.css.map */
