@@ -6,7 +6,7 @@
     text-decoration: none;
     list-style: none;
 }
-@import "animaciones";
+
 @font-face {
     font-family: poppins;
     src: url(../poppins/Poppins-Medium.ttf);
@@ -135,28 +135,6 @@
     }
 }
 
-
-@keyframes ampliar-subrayado{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 100%;
-    }
-}
-@keyframes aparicion{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@import "animaciones";
-@font-face {
-    font-family: poppins;
-    src: url(../poppins/Poppins-Medium.ttf);
-}
                                                                 /*Encabezado*/
 .encabezado{
     display: flex;
