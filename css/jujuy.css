@@ -1,0 +1,28 @@
+.contenedor-info {
+  background-color: rgb(255, 252, 252);
+}
+.contenedor-info .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  color: aliceblue;
+  border: 3px solid black;
+}
+.contenedor-info .tarjeta h2 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.contenedor-info .tarjeta p {
+  font-size: 20px;
+  width: 70%;
+}
+.contenedor-info .tarjeta img {
+  height: 80%;
+  width: 80%;
+}
+
+/*# sourceMappingURL=jujuy.css.map */

@@ -1,0 +1,96 @@
+.encabezado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../img/fondo-header/fondo-header-editado.jpg);
+  background-size: cover;
+  box-shadow: 0px 0px 30px black;
+}
+.encabezado .encabezado-espacio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  height: 95%;
+}
+.encabezado .encabezado-espacio .encabezado__superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.encabezado .encabezado-espacio .encabezado__superior .superior__i img {
+  width: 150px;
+}
+.encabezado .encabezado-espacio .superior__nav {
+  display: flex;
+  gap: 20px;
+}
+.encabezado .encabezado-espacio .superior__nav .nav__buscador .buscador-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  transform: translateY(2px);
+  color: white;
+  cursor: pointer;
+}
+.encabezado .encabezado-espacio .superior__nav .nav__buscador .buscador-barra {
+  border-radius: 10px;
+  border: none;
+}
+.encabezado .encabezado-espacio .superior__nav .nav__lista {
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+.encabezado .encabezado-espacio .superior__nav .nav__lista .lista-item {
+  position: relative;
+  cursor: pointer;
+}
+.encabezado .encabezado-espacio .superior__nav .nav__lista .lista-item a {
+  color: white;
+}
+.encabezado .encabezado-espacio .superior__nav .nav__lista .lista-item .nav__sub-lista {
+  display: none;
+  position: absolute;
+  opacity: 1;
+  animation-name: aparicion;
+  animation-duration: 0.8s;
+}
+.encabezado .encabezado-espacio .superior__nav .nav__lista .lista-item .nav__sub-lista .sub-item {
+  white-space: nowrap;
+  font-size: 15px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.encabezado .encabezado-espacio .superior__nav .nav__lista .lista-item .nav__sub-lista .sub-item:hover {
+  transform: translateX(12px);
+}
+.encabezado .encabezado-espacio .superior__nav .nav__lista .lista-item:hover .nav__sub-lista {
+  display: block;
+}
+.encabezado .encabezado__inferior {
+  color: white;
+  margin-bottom: 50px;
+}
+.encabezado .encabezado__inferior h1 {
+  font-size: 40px;
+}
+.encabezado .encabezado__inferior p {
+  font-size: 20px;
+}
+
+/*Contenedor-1*/
+.contenedor-1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contenedor-1 .cal-com {
+  padding: 100px;
+  text-align: center;
+}
+.contenedor-1 .cal-com img {
+  width: 400px;
+}
+
+/*# sourceMappingURL=header.css.map */
